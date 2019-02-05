@@ -6,11 +6,19 @@ layout: default
 <head>
   <meta charset="utf-8">
   <title>The Brown Bear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-img {
-  background-image: url("http://seancrane.com/blog/wp-content/uploads/2018/01/brown_bear_landscape_2.jpg")
-    
-}
+.bg-img {
+  /* The image used */
+  background-image: url("http://seancrane.com/blog/wp-content/uploads/2018/01/brown_bear_landscape_2.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+  min-height: 380px;
 
 /* Position the navbar container inside the image */
 .container {
@@ -41,7 +49,7 @@ img {
   </style> 
 </head> 
 <body> 
-<img src="http://seancrane.com/blog/wp-content/uploads/2018/01/brown_bear_landscape_2.jpg"/>
+<div class=".bg-img">
   <div class="container">
     <div class="topnav">
    <a href="/index.html">Overview</a>
@@ -49,7 +57,7 @@ img {
    <a href="/distribution+habitat.html">Distribution + Habitat</a>
     </div>
   </div>
-
+  </div>
   <h1>The Brown Bear</h1>
   <div id="overview">  
    <h2>Overview</h2>
