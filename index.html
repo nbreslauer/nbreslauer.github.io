@@ -7,27 +7,59 @@ layout: default
   <meta charset="utf-8">
   <title>The Brown Bear</title>
   <style>
-  .nav {
-   background-image: url("kodiak-bear-1.jpg");
-  min-height: 380px; 
-  list-style-type: none;
+ .bg-img {
+  /* The image used */
+  background-image: url("img_nature.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-    .nav li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
-}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
   </style> 
 </head> 
 <body> 
- <ul class="nav">
-    <li><a href="/index.html">Overview</a></li>
-    <li><a href="/description.html">Description</a></li>
-    <li><a href="/distribution+habitat.html">Distribution + Habitat</a></li>
-  </ul>
+ <div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+   <a href="/index.html">Overview</a>
+   <a href="/description.html">Description</a>
+   <a href="/distribution+habitat.html">Distribution + Habitat</a>
+    </div>
+  </div>
+</div>
   <h1>The Brown Bear</h1>
   <div id="overview">  
    <h2>Overview</h2>
