@@ -70,8 +70,9 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="bg-img" role="banner">
-      <h1>The Brown Bear</h1>  
+    <header>
+      <div class="bg-img" role="banner">
+      <h1> class="h1" The Brown Bear</h1>  
   <div class="container">
     <div class="topnav">
    <a href="/index.html">Overview</a>
@@ -79,6 +80,7 @@
    <a href="/distribution+habitat.html">Distribution + Habitat</a>
     </div>
   </div>
+      </div>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
