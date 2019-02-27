@@ -18,7 +18,21 @@ layout: default
  <details> 
   <summary>United States</summary>
     <p>The brown bear has lost 98% of its habitat in the lower 48 states. About 95% of the brown bear population in the United States is in Alaska, though in the lower 48 states, they are repopulating gradually but steadily along the Rockies and the western Great Plains.[147][148] The Alaskan population is estimated at 32,000 individuals.[149] The largest populations of brown bears in the lower 48 states are found in the 23,300-km2 Greater Yellowstone Ecosystem and the 24,800-km2 Northern Continental Divide Ecosystem.</p>
- </details>
+ <div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(36.0652 -76.06453),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+    </details>
   </section>
   <section>
    <h3>Europe</h3>
